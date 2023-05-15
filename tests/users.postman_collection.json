@@ -1,0 +1,162 @@
+{
+	"info": {
+		"_postman_id": "0a53ebba-dd6c-49d8-bbdb-8f0e590a3a5d",
+		"name": "users",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13230408"
+	},
+	"item": [
+		{
+			"name": "getusers",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/users/getusers",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"getusers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getusersById",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/users/getusersById/1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"getusersById",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createUsers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"user\": {\r\n    \"id\": 1,\r\n    \"name\": 1,\r\n    \"email\": 1,\r\n    \"birthDate\": 1,\r\n    \"address\": {\r\n        \"id\": 1,\r\n        \"street\": 1,\r\n        \"state\": 1,\r\n        \"city\": 1,\r\n        \"country\": 1,\r\n        \"zip\": 1\r\n    }\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/users/createUsers",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"createUsers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateUsersById",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n  \"user\": {\r\n    \"id\": 1,\r\n    \"name\": 2,\r\n    \"email\": 2,\r\n    \"birthDate\": 2,\r\n    \"address\": {\r\n        \"id\": 1,\r\n        \"street\": 1,\r\n        \"state\": 1,\r\n        \"city\": 1,\r\n        \"country\": 1,\r\n        \"zip\": 1\r\n    }\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/users/updateUsersById/4",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"updateUsersById",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteUsersById",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/users/deleteUsersById/2",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"deleteUsersById",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
