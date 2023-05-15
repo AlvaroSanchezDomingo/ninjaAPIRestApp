@@ -81,12 +81,3 @@ exports.deleteUsersById = function (req, res) {
     res.status(400).send();
   }
 };
-
-exports.test = function (req, res) {
-  try {
-    console.log('test');
-    res.status(200).send();
-  } catch (e) {
-    res.status(400).send();
-  }
-};
