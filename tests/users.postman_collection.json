@@ -21,11 +21,13 @@
 					}
 				],
 				"url": {
-					"raw": "localhost:3000/users/getusers",
+					"raw": "https://ninjaapp.onrender.com/users/getusers",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"ninjaapp",
+						"onrender",
+						"com"
 					],
-					"port": "3000",
 					"path": [
 						"users",
 						"getusers"
@@ -46,11 +48,13 @@
 					}
 				],
 				"url": {
-					"raw": "localhost:3000/users/getusersById/1",
+					"raw": "https://ninjaapp.onrender.com/users/getusersById/1",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"ninjaapp",
+						"onrender",
+						"com"
 					],
-					"port": "3000",
 					"path": [
 						"users",
 						"getusersById",
@@ -67,7 +71,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"user\": {\r\n    \"id\": 1,\r\n    \"name\": 1,\r\n    \"email\": 1,\r\n    \"birthDate\": 1,\r\n    \"address\": {\r\n        \"id\": 1,\r\n        \"street\": 1,\r\n        \"state\": 1,\r\n        \"city\": 1,\r\n        \"country\": 1,\r\n        \"zip\": 1\r\n    }\r\n  }\r\n}",
+					"raw": "{\r\n  \"user\": {\r\n    \"id\": 2,\r\n    \"name\": 1,\r\n    \"email\": 1,\r\n    \"birthDate\": 1,\r\n    \"address\": {\r\n        \"id\": 1,\r\n        \"street\": 1,\r\n        \"state\": 1,\r\n        \"city\": 1,\r\n        \"country\": 1,\r\n        \"zip\": 1\r\n    }\r\n  }\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -75,11 +79,13 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:3000/users/createUsers",
+					"raw": "https://ninjaapp.onrender.com/users/createUsers",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"ninjaapp",
+						"onrender",
+						"com"
 					],
-					"port": "3000",
 					"path": [
 						"users",
 						"createUsers"
@@ -98,7 +104,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "\r\n{\r\n  \"user\": {\r\n    \"id\": 1,\r\n    \"name\": 2,\r\n    \"email\": 2,\r\n    \"birthDate\": 2,\r\n    \"address\": {\r\n        \"id\": 1,\r\n        \"street\": 1,\r\n        \"state\": 1,\r\n        \"city\": 1,\r\n        \"country\": 1,\r\n        \"zip\": 1\r\n    }\r\n  }\r\n}\r\n",
+					"raw": "\r\n{\r\n  \"user\": {\r\n    \"name\": \"new name\"\r\n  }\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -106,18 +112,17 @@
 					}
 				},
 				"url": {
-					"raw": "127.0.0.1:3000/users/updateUsersById/4",
+					"raw": "https://ninjaapp.onrender.com/users/updateUsersById/2",
+					"protocol": "https",
 					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
+						"ninjaapp",
+						"onrender",
+						"com"
 					],
-					"port": "3000",
 					"path": [
 						"users",
 						"updateUsersById",
-						"4"
+						"2"
 					]
 				}
 			},
@@ -141,14 +146,13 @@
 					}
 				},
 				"url": {
-					"raw": "127.0.0.1:3000/users/deleteUsersById/2",
+					"raw": "https://ninjaapp.onrender.com/users/deleteUsersById/2",
+					"protocol": "https",
 					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
+						"ninjaapp",
+						"onrender",
+						"com"
 					],
-					"port": "3000",
 					"path": [
 						"users",
 						"deleteUsersById",

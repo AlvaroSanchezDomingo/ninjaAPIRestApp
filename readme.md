@@ -11,3 +11,8 @@ npm test
 **DATA BASE**
 
 Local json file
+
+**DEPLOYMENT**
+
+App deployed to
+https://ninjaapp.onrender.com
